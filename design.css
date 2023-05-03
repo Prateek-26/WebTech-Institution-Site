@@ -164,9 +164,7 @@ ol{
 }
 
 .placement_box{
-    position: relative;
-    top: -7vw;
-    left: 10%;
+    min-height: 100vh;
 }
 .about_p{
     padding: 1vw;
@@ -178,20 +176,39 @@ ol{
     color: white;
     border-radius: 1vw;
 }
+
+.placement-img-container{
+    margin-top: 4rem;
+    width: 80vw;
+    height: 80vh;
+    /* background: blue; */
+    background: url("./css/images/placement\ tree\ img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.placement_tree{
+    /* background: green; */
+    /* height: 50vh;
+    width: 50vw; */
+    margin-top: 6rem;
+    height: 60vw;
+    width: 70vw;
+}
 .placement_tree h1{
     text-align: center;
 }
 .placement_tree_img img{
-    position: relative;
-    top: 16vw;
-    height: 60vw;
-    width: 70vw;
+    /* position: relative; */
+    /* top: 16vw; */
+    background-image: url("/css/images/img2.jpg");
+    background-size: contain;
+
 }
 .placement_info p{
-    position: absolute;
-    padding: 1vw;
-    top: 85vw;
-    width: 60vw;
+    padding: 2vw;
+    margin-top: 4rem;
+    width: 80vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 16px;

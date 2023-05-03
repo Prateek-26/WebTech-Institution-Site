@@ -4,65 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design.css">
     <title>Goa College of Engineering</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/cbe5eee2e7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="design.css">
+
+            <!-- CSS LINK -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 <body>
-    <div class="navbar">
-        <div class="left_section">
-            <img src="pics/50year.jpg" class="jublee">
+    <!-- <div class="home-content"> -->
+        <section class="library-main">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="btn"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-col-center" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html" style="color: #fff; text-shadow: 0 #fff;">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Academics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./campus.html" style="color: black; text-shadow: 0 0;">Campus</a></li>
+                  <li><a class="dropdown-item" href="./Library.html" style="color: black; text-shadow: 0 0;">Library</a></li>
+                  <li><a class="dropdown-item" href="" style="color: black; text-shadow: 0 0;">Students</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administration
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">Director</a></li><li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">HODs</a></li><li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">Key Faculty</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./Placements.html">T&P</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="mid_section">
-            <img src="pics/Goa_College_of_Engineering_logo.png" class="gec_logo">
-            <p>Government of Goa <br> Goa College of Engineering</p>
+      </nav>
+    <div class="library-content flex-col-center">
+        <div class="sliding_content">
+            <div class="image_container">
+                <img src="./css/images/img7.jpg" alt="" class="slider_img" id="active">
+                <img src="./css/images/img8.jpg" alt="" class="slider_img">
+                <img src="./css/images/img9.jpg" alt="" class="slider_img">
+            </div>
+            <span id="next_button" class="carousel-btn">&#10095;</span>
+            <span id="prev_button" class="carousel-btn">&#10094;</span>
         </div>
-        <div class="right_section">
-            Farmagudi, Ponda- Goa - India
+        <div class="about-library">
+            <h3 class="library_head">Welcome to Library</h3>
+            <div class="library_info">
+                <p>The college has a resourceful, rich and spacious Central library which is located at the centre of the campus. Goa College of Engineering has one of the biggest libraries among the educational institution in the state of Goa catering the needs of more than 2200 students and 330 staff (Teaching & Non-teaching).The total area of the library building is 1911 square meters. It comprises of Circulation, Reading, Reference, Journals, Digital library, Multimedia, Processing, Text Book and Book Bank Sections. The ever expanding Central library currently holds 95528 books and Springer E-book Consortium. It has approximately 100 Journals of National and International acclaim. It also subscribes to E-journal consortium from Science direct, ASME, ASCE & DELNET. The library also subscribes lectures on National Programme on Technology Enhanced (NPTL). The Institute has unique Book Bank facility which provides 26 books to each student for the year. Around 50% students are extended this facility.</p>
+            </div>
         </div>
     </div>
-    <div class="lower_navbar_bg">
-        <div class="lower_navbar">
-            <a href="Home.html">Home</a>
-            <a href="nptel.html">NPTEL MOOCs</a>
-            <a href="Library.html">Library</a>
-            <a href="Placements.html">Placements</a>
-            <div id="dept_dropdown">Departments <span>&gt;</span> </div>
-            <div id="about_us_dropdown">About us <span>&gt;</span> </div>
-        </div>
-    </div>
-    <div id="dept_dropdown_show" class="dept_dropdown_show">
-        <a href="">
-            <option value="">Mechanical</option>
-            <option value="">Information Technology</option>
-            <option value="">Civil</option>
-            <option value="">Electrical</option>
-            <option value="">Computer</option>
-        </a>
-    </div>
-    <div id="dept_dropdown_show" class="dept_dropdown_show">
-        <a href=""><option value="">Mechanical Engineering</option></a>
-        <a href=""><option value="">Information Technology</option></a>
-        <a href=""><option value="">Civil Enigneering</option></a>
-        <a href=""><option value="">Electrical & Electronics Engg</option></a>
-        <a href=""><option value="">Electronics & Telecomm Engg</option></a>
-        <a href=""><option value="">Computer Engineering</option></a>
-        <a href=""><option value="">Mining Engineering</option></a>
-        <a href=""><option value="">Science and Humanities</option></a>
-    </div>
-    <div class="sliding_content">
-        <div class="image_container">
-            <img src="pics/img7.jpg" alt="" class="slider_img" id="active">
-            <img src="pics/img8.jpg" alt="" class="slider_img">
-            <img src="pics/img9.jpg" alt="" class="slider_img">
-        </div>
+</section>
+
+<footer>
+    <div class="footer-content flex-col-center">
+      <div class="icon-box">
         
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-facebook"></i>
+        
+      </div>
+      <div class="link-box">
+        
+          <a href="">HOME</a>
+          <span>|</span>
+          <a href="">ABOUT</a>
+          <span>|</span>
+          <a href="">CONTACT</a>
+          <span>|</span>
+          <a href="">PRIVACY</a>
+        
+      </div>
     </div>
-    <span id="next_button">&#10095;</span>
-    <span id="prev_button">&#10094;</span>
-    <h3 class="library_head">Welcome to Library</h3>
-    <div class="library_info">
-        <p>The college has a resourceful, rich and spacious Central library which is located at the centre of the campus. Goa College of Engineering has one of the biggest libraries among the educational institution in the state of Goa catering the needs of more than 2200 students and 330 staff (Teaching & Non-teaching).The total area of the library building is 1911 square meters. It comprises of Circulation, Reading, Reference, Journals, Digital library, Multimedia, Processing, Text Book and Book Bank Sections. The ever expanding Central library currently holds 95528 books and Springer E-book Consortium. It has approximately 100 Journals of National and International acclaim. It also subscribes to E-journal consortium from Science direct, ASME, ASCE & DELNET. The library also subscribes lectures on National Programme on Technology Enhanced (NPTL). The Institute has unique Book Bank facility which provides 26 books to each student for the year. Around 50% students are extended this facility.</p>
-    </div>
+</footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="jquery/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
 </body>

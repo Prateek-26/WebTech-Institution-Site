@@ -2,112 +2,38 @@
     margin: 0;
     padding: 0;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    border-bottom: 1px solid black;
-    height: 60px;
-    align-items: center;
-    background-color: #fff;
-    z-index: 1;
+
+/* Library */
+
+.library-main{
+    /* background: #000; */
+    min-height: 100vh;
 }
-.left_section{
-    margin-left: 40px;
+
+.library-content{
+    /* background: red; */
+    /* overflow-x: auto; */
+    min-height: 100vh;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
 }
-.right_section{
-    margin-right: 40px;
-}
-.jublee{
-    height: 60px;
-    margin-left: 50px;
-}
-.gec_logo{
-    height: 50px;
-}
-.mid_section{
-    display: flex;
-    align-items: center;
-    margin-right: 0px;
-}
-.lower_navbar{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 61px;
-    width: 50%;
-    margin-left: 25%;
-    height: 50px;
-    align-items: center;
-}
-.lower_navbar_bg{
-    width: 100%;
-    background-color: rgb(15, 82, 200);
-}
-.lower_navbar a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-#dept_dropdown,#about_us_dropdown{
-    color: white;
-    font-size: 20px;
-}
-#dept_dropdown,#about_us_dropdown:hover{
-    cursor: pointer;
-}
-#dept_dropdown_show{
-    position: absolute;
-    top: 111.4px;
-    right: 409px;
-    border: 1px solid gray;
-    background-color: white;
-    visibility: hidden;
-}
-#dept_dropdown_show a{
-    text-decoration: none;
-    color: rgb(15, 82, 200);
-    font-size: 18px;
-}
-#dept_dropdown_show option{
-    border-bottom: 1px solid gray;
-    padding: 3px 3px 3px 3px;
-}
-#dept_dropdown_show option:hover{
-    color: white;
-    background-color: rgb(15, 82, 200);
-}
-#about_us_dropdown_show{
-    position: absolute;
-    top: 111.4px;
-    right: 330px;
-    border: 1px solid gray;
-    background-color: white;
-    visibility: hidden;
-}
-#about_us_dropdown_show a{
-    text-decoration: none;
-    color: rgb(15, 82, 200);
-    font-size: 18px;
-}
-#about_us_dropdown_show option{
-    border-bottom: 1px solid gray;
-    padding: 3px 3px 3px 3px;
-}
-#about_us_dropdown_show option:hover{
-    color: white;
-    background-color: rgb(15, 82, 200);
+.about-library{
+    min-height: 50vh;
+    /* background: blue; */
 }
 .sliding_content{
+    position: relative;
     width:80%;
     height: 30vw;
-    position: relative;
     border: 5px solid rgb(203, 202, 202);
-    left: 10%;
+    /* left: 10%; */
     overflow: hidden;
-    z-index: -1;
+    /* z-index: -1; */
+    margin: 2rem 0;
+    background: green;
+}
+.image-container{
+    position: relative;
 }
 .slider_img{
     width: 100%;
@@ -117,32 +43,27 @@
 .slider_img:not(#active){
     left: -100%;
 }
-#next_button{
+.carousel-btn{
     position: absolute;
-    top: 21vw;
-    right: 11%;
+    top: 45%;
     font-size: 1vw;
     cursor: pointer;
     padding: 1.5vw;
     font-weight: bold;
     background-color: rgb(15, 82, 200);
     color: white;
+}
+
+#next_button{
+    right: 3%;
 }
 #next_button:active{
     color: rgb(15, 82, 200);
     background-color: white;
 }
 #prev_button{
-    display: inline-block;
-    position: absolute;
-    top: 21vw;
-    left: 11%;
-    font-size: 1vw;
-    cursor: pointer;
-    padding: 1.5vw;
-    font-weight: bold;
-    background-color: rgb(15, 82, 200);
-    color: white;
+    /* top: 21vw; */
+    left: 3%;
 }
 #prev_button:active{
     background-color: white;
@@ -283,14 +204,14 @@ ol{
     margin-top: 2%;
 }
 .library_info{
-    position: relative;
+    /* position: relative; */
     margin-top: 2%;
-    margin-left: 4%;
+    /* margin-left: 4%; */
     height: 10vw;
     width: 80vw;
 }
 .library_info p{
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(107, 168, 237);
     padding: 2vw;
     border-radius: 1vw;

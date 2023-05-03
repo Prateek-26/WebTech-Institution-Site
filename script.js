@@ -5,6 +5,8 @@ let index=0//counter for sliding images
 setInterval(animate,3000)
 
 $("#next_button").click(function(){
+    console.log("i was clicked!");
+    console.log(slider_img);
     slider_img[index].style.animation="next1 0.5s ease-in forwards"
     if(index>=slider_img.length-1){
         index=0

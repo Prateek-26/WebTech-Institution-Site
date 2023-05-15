@@ -218,6 +218,13 @@ html{
 
 /* Gallery */
 
+.gallery-header{
+    margin-left: 2rem;
+    color: var(--blue-dark);
+    /* border-bottom: 4px solid var(--blue-dark); */
+    text-decoration: underline;
+}
+
 .image-gallery{
     /* overflow: hidden; */
     /* min-height: 100vh; */

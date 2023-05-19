@@ -38,6 +38,7 @@ html{
 /* Home-Header */
 .home-section header{
     position: relative;
+    
 }
 .header-logos{
     height: 100%;
@@ -70,7 +71,9 @@ html{
 }
 /* Home-Navbar */
 .navbar{
+    /* position: fixed; */
     padding: 0;
+    /* z-index: 2; */
 }
 .container-fluid{
     background: var(--blue-dark);
@@ -91,6 +94,24 @@ html{
 }
 .nav-item{
     margin: 0 2rem;
+}
+.nav-item-login button{
+    background-color: white;
+    color: #0f52c8;
+    border: none;
+    outline: none;
+    padding: 0.5vw;
+    font-size: 1rem;
+    border-radius: 0.9vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 1vw;
+}
+.nav-item-login button:hover{
+    color: black;
+    font-weight: bolder;
 }
 .dropdown-menu{
     background: var(--white);
@@ -337,4 +358,67 @@ html{
     .home-about-right{
         margin-top: 2.5rem;
     }
+}
+.Login_form{
+    position: fixed;
+    z-index: 2;
+    top: 35%;
+    left: 35%;
+    border: 1px solid black;
+    padding: 1.5vw;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    background-color: white;
+    visibility: hidden;
+}
+.Login_form p{
+    
+    font-size: 1.2vw;
+}
+::placeholder{
+    font-size: 0.8vw;
+    color: rgb(166, 165, 165);
+    padding: 0.5vw;
+}
+#email_txt{
+    margin-left: 3.2vw;
+}
+.password_info{
+    margin-top: 1.5vw;
+}
+.textbox{
+    margin-left: 1vw;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 60%;
+}
+.radio_but{
+    margin-top: 4vw;
+}
+#fac_rad{
+    margin-left: 2vw;
+}
+#sub_but{
+    margin-top: 2vw;
+    font-size: 2.5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.5vw;
+    color: white;
+    background-color: #0f52c8;
+    outline: none;
+    border: none;
+    /* border: 0.2px solid black; */
+    cursor: pointer;
+}
+.bg_blur{
+    top: 12vw;
+    position: absolute;
+    margin: 0;
+    height: 280%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    z-index: 0;
 }

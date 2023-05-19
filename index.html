@@ -80,7 +80,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
                       </li>
-
+                      <li class="nav-item-login">
+                        <button id="login_but">Login</button>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -257,6 +259,18 @@
             </div>
         </footer>
     </section>
+
+    <form class="Login_form" action="post">
+      <p class="email_info"><span>Email </span><input class="textbox" type="text" placeholder="email" id="email_txt"></p>
+      <p class="password_info"><span>Password </span><input class="textbox" type="text" placeholder="password"></p>
+      <div class="radio_but">
+          <span id="stud_rad"><input type="radio" name="rad" id="student" value="student"> Student </span>
+          <span id="fac_rad"><input type="radio" name="rad" id="faculty" value="faculty"> Faculty </span>
+      </div>
+      <input id="sub_but" type="submit" value="Login">
+    </form>
+    
+    <div class="bg_blur"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
@@ -280,6 +294,24 @@
       buttons.forEach(button => button.addEventListener('click', open));
       overlay.addEventListener('click', close)
 
+      let login_but=document.querySelector("#login_but")
+      let Login_form=document.querySelector(".Login_form")
+      let bg_blur=document.querySelector(".bg_blur")
+      let count=1
+      login_but.addEventListener('click',function() {
+        count++
+        if(count%2==0){
+          Login_form.style.visibility="visible"
+          bg_blur.style.visibility="visible"
+        }
+        else{
+          Login_form.style.visibility="hidden"
+          bg_blur.style.visibility="hidden"
+        }
+      })
+
     </script>
+
+  
 </body>
 </html>

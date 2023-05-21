@@ -367,7 +367,7 @@ html{
     border: 1px solid black;
     padding: 1.5vw;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    background-color: white;
+    background-color: #fff;
     visibility: hidden;
 }
 .Login_form p{

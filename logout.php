@@ -8,6 +8,6 @@
         setcookie("pass", '', time() - (3600));
     }
  
-    header('location:index.php');
+    // header('location:index.php');
 
 ?>

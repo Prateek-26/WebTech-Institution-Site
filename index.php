@@ -74,6 +74,7 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
 }
 .back { text-align: left; margin-top:10px;}
 .back a {color: #444444; font-size: 13px;text-decoration: none;}
+
 </style>
 </head>
 <body id="LoginForm">
@@ -350,6 +351,7 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
           <!-- <div class="forgot">
               <a href="#">Forgot password?</a>
           </div> -->
+
           <input type="submit" class="btn btn-primary" id="sub_but" value="Login" name="login">
           <span>    <?php
               if (isset($_SESSION['message'])){
@@ -388,6 +390,7 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
       overlay.addEventListener('click', close)
 
       let login_but=document.querySelector("#login_but")
+      let logout_btn=document.querySelector("#logout_btn")
       let Login_form=document.querySelector(".Login_form")
       let bg_blur=document.querySelector(".bg_blur")
       let count=1
@@ -396,10 +399,14 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
         if(count%2==0){
           Login_form.style.visibility="visible"
           bg_blur.style.visibility="visible"
+          login_but.style.display="none";
+          logout_btn.style.display="none";
         }
         else{
           Login_form.style.visibility="hidden"
           bg_blur.style.visibility="hidden"
+          login_but.style.display="span";
+          logout_btn.style.display="none";
         }
       })
       login_form_div.addEventListener('click',()=>{

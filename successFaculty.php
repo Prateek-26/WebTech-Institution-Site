@@ -6,9 +6,12 @@
         header('index.php');
         exit();
     }
-    include('conn.php');
-    $query=mysqli_query($conn,"select * from user where user_id='".$_SESSION['id']."'");
-    $row=mysqli_fetch_assoc($query);
+    // include('conn.php');
+
+
+
+    // $query=mysqli_query($conn,"select * from user where user_id='".$_SESSION['id']."'");
+    // $row=mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,8 +47,7 @@
                 <option value="etc">ETC</option>
             </select><br>
             <textarea name="desc" id="" cols="30" rows="10" placeholder="Description"></textarea>
-            <!-- <button type="submit">Add</button> -->
-            <input type="submit" class="btn btn-primary" id="sub_but" value="Login" name="login">
+            <button class="btn btn-primary" type="submit">Add</button>
         </form>
     </div>
 </body>

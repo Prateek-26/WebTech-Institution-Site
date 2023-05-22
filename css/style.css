@@ -14,6 +14,11 @@ html{
     overflow-x: hidden;
 }
 
+/* footer{
+    position: absolute;
+    bottom: 0;
+} */
+
 
 .flex-col-center{
     display: flex;
@@ -214,6 +219,8 @@ html{
 
 /* fOOTER */
 .footer-content{
+    /* position: absolute; */
+    /* bottom: 0; */
     background: #000;
     padding: 1rem;
 }

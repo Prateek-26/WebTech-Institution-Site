@@ -105,7 +105,7 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
                     <ul class="navbar-nav">
 
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html" style="color: #fff; text-shadow: 0 #fff;">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.php" style="color: #fff; text-shadow: 0 #fff;">Home</a>
                       </li>
 
                       <li class="nav-item dropdown">

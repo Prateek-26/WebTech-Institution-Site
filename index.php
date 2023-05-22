@@ -340,6 +340,10 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
           <div class="form-group">
               <input type="password" value="<?php if (isset($_COOKIE["pass"])){echo $_COOKIE["pass"];}?>" name="password" class="form-control" id="inputPassword" placeholder="Password">
           </div>
+          <div class="form-group">
+          <span id="stud_rad"><input type="radio" name="rad" id="student" value="student"> Student </span>
+          <span id="fac_rad"><input type="radio" name="rad" id="faculty" value="faculty"> Faculty </span>
+          </div>
           <div class="form-group" style="text-align:left;">
               <label><input type="checkbox" name="remember" <?php if (isset($_COOKIE["user"]) && isset($_COOKIE["pass"])){ echo "checked";}?>> Remember me </label>
           </div>

@@ -8,8 +8,9 @@ echo "Into Login!";
      
         $username=$_POST['username'];
         $password=$_POST['password'];
+        $person=$_POST['rad'];
 
-        echo"$username + $password";
+        echo"$username + $password + $person" ;
      
         $query=mysqli_query($conn,"select * from user where user_name='$username' && user_password='$password'");
 

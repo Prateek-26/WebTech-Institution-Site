@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "id: " . $row["id"];
         $sname = $row["name"];
         $sgender = $row["gender"];
-        $srollno = $row["rollno"];
+        $srno = $row["rollno"];
         $sprno = $row["prno"];
         $sdept = $row["dept"];
         $syear = $row["year"];
@@ -33,19 +33,19 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 ?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/cbe5eee2e7.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/cbe5eee2e7.js" crossorigin="anonymous"></script>
     
     <!-- CSS LINK -->
-    <!-- <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -118,16 +118,16 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="student_img_Name">
             <img src="/pics/putin.img" alt="">
-            <span class="name">Vladimir Putin</span>
+            <span class="name"><?php echo $sname ?></span>
         </div>
 
         <div class="other_info">
-            <p><span><b>Roll no : </b></span><label>2011060-05</label></p>
-            <p><span><b>Permanent registration no : </b></span><label for="">2020110-96</label></p>
-            <p><span><b>Gender : </b></span><label for="">Sigma male</label></p>
-            <p><span><b>Fees pending : </b></span><label for="">None</label></p>
-            <p><span><b>Current year : </b></span><label for="">TE</label></p>
-            <p><span><b>Backlogs : </b></span><label for="">None</label></p>
+            <p><span><b>Roll no : </b></span><label><?php echo $srno ?></label></p>
+            <p><span><b>Permanent registration no : </b></span><label for=""><?php echo $sprno ?></label></p>
+            <p><span><b>Gender : </b></span><label for=""><?php echo $sgender ?></label></p>
+            <!-- <p><span><b>Fees pending : </b></span><label for="">None</label></p> -->
+            <p><span><b>Current year : </b></span><label for=""><?php echo $syear ?></label></p>
+            <p><span><b>Dept : </b></span><label for=""><?php echo $sdept ?></label></p>
         </div>
 
         <div class="results">
@@ -186,4 +186,4 @@ if (mysqli_num_rows($result) > 0) {
 
 
 </body>
-</html> -->
+</html>

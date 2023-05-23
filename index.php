@@ -119,13 +119,17 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
                         </ul>
                       </li>
 
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                           Administration
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">Director</a></li><li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">HODs</a></li><li><a class="dropdown-item" href="#" style="color: black; text-shadow: 0 0;">Key Faculty</a></li>
                         </ul>
+                      </li> -->
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/WT%20Highway/facultyinfo.php">Faculty</a>
                       </li>
 
                       <li class="nav-item">
@@ -343,7 +347,7 @@ body#LoginForm{ background-image:url("img/bgblur.jpg"); background-repeat:no-rep
           </div>
           <div class="form-group">
           <span id="stud_rad"><input type="radio" name="rad" id="student" value="student"> Student </span>
-          <span id="fac_rad"><input type="radio" name="rad" id="faculty" value="faculty"> Faculty </span>
+          <span id="fac_rad"><input type="radio" name="rad" id="faculty" value="faculty"> Admin </span>
           </div>
           <div class="form-group" style="text-align:left;">
               <label><input type="checkbox" name="remember" <?php if (isset($_COOKIE["user"]) && isset($_COOKIE["pass"])){ echo "checked";}?>> Remember me </label>

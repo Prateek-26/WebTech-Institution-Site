@@ -22,7 +22,18 @@ if (isset($_POST['login'])) {
         $_SESSION['message'] = "Login Failed. User not Found!";
         header('location:index.php');
     } else {
-        echo "Successfully Logged In";
+        echo "Successfully Logged In";if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"];
+        $sname = $row["name"];
+        $sgender = $row["gender"];
+        $srno = $row["rollno"];
+        $sprno = $row["prno"];
+        $sdept = $row["dept"];
+        $syear = $row["year"];
+        $semail = $row["email"];
+    }
+}
 
         $row = mysqli_fetch_array($query);
 

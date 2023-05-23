@@ -6,7 +6,7 @@
         header('index.php');
         exit();
     }
-    // include('conn.php');
+    include('conn.php');
 
 
 
@@ -41,6 +41,7 @@
 
         <form action="addFaculty.php" method="post" class="flex-col-center">
             <input type="text" name="fname" id="" placeholder="Name"><br>
+            <input type="email" name="femail" id="" placeholder="Email"><br>
             <select name="dept" id="">
                 <option value="it">IT</option>
                 <option value="comp">COMP</option>

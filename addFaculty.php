@@ -1,13 +1,16 @@
 <?php
 include('conn.php');
-if (isset($_POST['login'])) {
-    // echo"Hi here";
-    $facultyName = $_POST['fname'];
+echo"Hi here";
+// if (isset($_POST['login'])) {
+    $facultyName = $_POST['fname']; 
+    $facultyEmail = $_POST['femail']; 
     $facultyDept = $_POST['dept'];
     $facultyDesc = $_POST['desc'];
 
+    echo $facultyDesc;
 
-    $query = "insert into faculty(name,dept,description) values('$facultyName','$facultyDept','$facultyDesc');";
+
+    $query = "insert into faculty(name,dept,description,email) values('$facultyName','$facultyDept','$facultyDesc', '$facultyEmail');";
     $result = mysqli_query($conn, $query);
     header('location:index.php');
 
@@ -19,5 +22,5 @@ if (isset($_POST['login'])) {
     //         echo "id: " . $row["id"];
     //     }
     // }
-}
+// }
 ?>

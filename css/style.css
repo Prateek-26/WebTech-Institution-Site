@@ -431,34 +431,38 @@ html{
 }
 .faculty_details{
     display: grid;
-    grid-template-columns: 1fr 3fr;
     margin-top: 10vw;
     margin-bottom: 10vw;
     margin-left: 20%;
     height: 30vw;
-    width: 60%;
+    width: 50%;
     padding: 2vw;
     /* border: 1px solid black; */
     border-radius: 2vw;
-    background-color: #6fb4c7;
+    box-shadow: 1vw 1vw 3vw gray;
+    /* background-color: #6fb4c7; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
 }
-.faculty_img img{
+/* .faculty_img img{
     margin-top: 5%;
     margin-left: 5%;
     height: 10vw;
     width: 10vw;
     border-radius: 5vw;
     border: 1px solid black;
-    /* background-color: red; */
-}
+    background-color: red;
+} */
 .faculty_info{
+    margin-left: 2vw;
     margin-top: 5%;
     align-items: center;
     display: grid;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
 }
 .faculty_bio{
     text-align: justify;
+    /* margin-left: 5vw; */
 }
 .student_img_Name{
     height: 4vw;
@@ -483,11 +487,18 @@ html{
     padding: 2vw;
     /* background-color: aqua; */
 }
-.results{
-    height: 10vw;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: aqua;
+.btn-primary{
+    font-size: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    background-color: #0f52c8;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 8px var(--blue-dark);
+    cursor: pointer;
+}
+.btn-primary:active{
+    background-color: white;
+    color: var(--blue-dark);
+    box-shadow: none;
 }

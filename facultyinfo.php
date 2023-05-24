@@ -116,13 +116,13 @@ $result = mysqli_query($conn, $query);
       $email = $row["email"];
     ?>
         <div class="faculty_details">
-            <div class="faculty_img">
+            <!-- <div class="faculty_img">
                 <img src="" alt="">
-            </div>
+            </div> -->
             <div class="faculty_info">
-                <div class="faculty_name"><?php echo $fname?></div>
-                <div class="faculty_designation"><?php echo $email?></div>
-                <div class="faculty_designation"><?php echo $fdept?></div>
+                <div class="faculty_name"><b>Faculty Name :</b><?php echo $fname?></div>
+                <div class="faculty_designation"><b>Facult Designation :</b> <?php echo $email?></div>
+                <div class="faculty_dept"><b>Faculty Dept :</b><?php echo $fdept?></div>
                 <div class="faculty_bio"><?php echo $fdesc?></div>
             </div>
         </div>

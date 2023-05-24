@@ -117,8 +117,8 @@ if (mysqli_num_rows($result) > 0) {
               </nav>
         </div>
         <div class="student_img_Name">
-            <img src="/pics/putin.img" alt="">
-            <span class="name"><?php echo $sname ?></span>
+            <!-- <img src="/pics/putin.img" alt=""> -->
+            <span class="name"><b><?php echo $sname ?></b></span>
         </div>
 
         <div class="other_info">
@@ -130,10 +130,6 @@ if (mysqli_num_rows($result) > 0) {
             <p><span><b>Dept : </b></span><label for=""><?php echo $sdept ?></label></p>
         </div>
 
-        <div class="results">
-            <h2><b><u>Results</u></b></h2>
-            
-        </div>
         <footer>
             <div class="footer-content flex-col-center">
               <div class="icon-box">

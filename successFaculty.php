@@ -20,16 +20,37 @@
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <style>
-
+    .flex-col-center{
+        /* border: 1px solid black; */
+        width: 30%;
+        margin-top: 5vw;
+        margin-left: 34%;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+        border-radius: 2vw;
+        box-shadow: 2vw 2vw 3vw rgb(137, 137, 137);
+    }
     .success-form-div{
         /* background: red; */
         height: 50vh;
     }
+    .success-form-div h1{
+        text-align: center;
+        margin-bottom: 2vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
     .success-form-div input, select, textarea, input::placeholder{
         /* background: orange; */
-        width: 30vh;
+        width: 40vh;
         margin: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .success-form-div textarea{
+        border: 1px solid black;
+        border-radius: 1vw;
     }
 
 </style>
@@ -48,7 +69,7 @@
                 <option value="etc">ETC</option>
             </select><br>
             <textarea name="desc" id="" cols="30" rows="10" placeholder="Description"></textarea>
-            <button class="btn btn-primary" type="submit">Add</button>
+            <button class="btn-primary" type="submit">Add</button>
         </form>
     </div>
 </body>
